@@ -1,6 +1,6 @@
 import { Book } from './book';
 
-export const BOOKS = [
+export const BOOKS : Book[] = [
     {
       "author": "Chinua Achebe",
       "country": "Nigeria",

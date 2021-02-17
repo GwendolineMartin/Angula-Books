@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Book } from './data/book';
+import { BOOKS } from './data/books';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app-book';
+  title = "Book's";
+  books :  Book[] = BOOKS;
 }

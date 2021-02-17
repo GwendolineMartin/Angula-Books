@@ -1,10 +1,10 @@
 export interface Book {
-    authorName : string;
-    authorCountry : string;
+    author : string;
+    country : string;
     link : string;
     language :string;
-    img : string;
-    nbPages : number;
+    linkImg : string;
+    pages : number;
     title : string;
     year : number;
 }
