@@ -58,7 +58,7 @@ export const BOOKS : Book[] = [
       "language": "Arabic",
       "linkImg": "https://images-na.ssl-images-amazon.com/images/I/51kg-1A+3kL._SY344_BO1,204,203,200_.jpg",
       "pages": 288,
-      "title": "One Thousand and One Nights",
+      "title": "One Thousand and One",
       "year": 1200
     },
     {
@@ -98,7 +98,7 @@ export const BOOKS : Book[] = [
       "language": "French, English",
       "linkImg": "https://images-na.ssl-images-amazon.com/images/I/41YRZHcpMKL._SX303_BO1,204,203,200_.jpg",
       "pages": 256,
-      "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+      "title": "Molloy",
       "year": 1952
     },
 ];

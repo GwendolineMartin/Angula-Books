@@ -1,1 +1,17 @@
-<p>books works!</p>
+<div class="d-flex mt-5 justify-content-center">
+    <div class="col-sm-4 d-flex justify-content-center">
+    <app-books-details 
+        [book]="selectedBook"
+    ></app-books-details>
+  </div>
+<div *ngIf="books" class="d-flex col-sm-8 flex-wrap justify-content-center">
+    <div *ngFor="let book of books" class="card mr-5 mb-5" style="width: 18rem;">
+      <img src={{book.linkImg}} style="height: 400px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{book.title}}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button  (click)="onClick(book)" href="#" style="background-color: #7952b3; color:white" class="btn">Go somewhere</button>
+      </div>
+    </div>
+  </div></div>
+

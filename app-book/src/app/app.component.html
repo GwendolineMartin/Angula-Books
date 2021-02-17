@@ -29,16 +29,7 @@
       </form>
     </div>
   </nav>
-<div *ngIf="books" class="d-flex flex-wrap justify-content-center mt-5 p-5">
-  <div *ngFor="let item of books" class="card m-4" style="width: 18rem;">
-    <img src={{item.linkImg}} style="height: 350px" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{item.title}}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" style="background-color: #7952b3; color:white" class="btn">Go somewhere</a>
-    </div>
-  </div>
-</div>
 
+  <app-books></app-books>
 </body>
 </html>

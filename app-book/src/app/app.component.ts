@@ -10,4 +10,14 @@ import { BOOKS } from './data/books';
 export class AppComponent {
   title = "Book's";
   books :  Book[] = BOOKS;
+
+
+
+
+
+  onClick(book : Book):void {
+    console.log(book);
+  }
 }
+
+

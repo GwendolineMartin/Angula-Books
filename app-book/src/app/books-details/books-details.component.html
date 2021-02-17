@@ -1,1 +1,14 @@
-<p>books-details works!</p>
+<div *ngIf="book" class="card" style="width: 25rem;">
+    <img src="{{book.linkImg}}" style="height: 400px" class="card-img-top" alt="...">
+    <div *ngIf="book !== null" class="card-body">
+      <h5 class="card-title">{{book.title}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Author : <b>{{book.author}}</b></li>
+      <li class="list-group-item">Country : <b>{{book.country}}</b></li>
+      <li class="list-group-item">Year : <b>{{book.year}}</b></li>
+    </ul>
+    <div class="card-body">
+      <a href="{{book.link}}" class="card-link">link</a>
+    </div>
+  </div>
