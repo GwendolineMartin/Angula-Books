@@ -1,9 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SSL_OP_TLS_BLOCK_PADDING_BUG } from 'constants';
-import { map,take, switchMap } from 'rxjs/operators';
-import { BooksComponent } from '../books/books.component';
 import { Book } from '../data/book';
 import { BOOKS } from '../data/books';
+import { ServiceService } from '../service.service'
 
 @Component({
   selector: 'app-home',
@@ -12,12 +10,15 @@ import { BOOKS } from '../data/books';
 })
 export class HomeComponent implements OnInit {
 
-  book : Book[] = BOOKS;
+  books : Book[] = BOOKS;
 
-  constructor() {
+  constructor(private aS : ServiceService) {
+    this.books = this.aS.getAlbums(this.books)
+    console.log(this.books)
    }
 
   ngOnInit(): void {
+    
     
     
   }
