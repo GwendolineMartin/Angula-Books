@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { pipe } from 'rxjs';
 import { Book } from './data/book';
 import { BOOKS } from './data/books';
 
@@ -11,13 +12,7 @@ export class AppComponent {
   title = "Book's";
   books :  Book[] = BOOKS;
 
-
-
-
-
-  onClick(book : Book):void {
-    console.log(book);
-  }
+  
 }
 
 

@@ -1,18 +1,16 @@
-<div *ngIf="book" class="card sticky-top" style="width: 25rem;">
-    <img src="{{book.linkImg}}" style="height: 500px" class="card-img-top" alt="...">
-    <div *ngIf="book !== null" class="card-body">
-      <h5 class="card-title">{{book.title}}</h5>
+<div *ngIf="book" class="card sticky-top" style="width: 15rem;">
+    <img src="{{book.linkImg}}" style="height: 300px" class="card-img-top" alt="...">
+    <div *ngIf="book !== null" class="card-body p-3">
+      <h5 class="card-title m-0">{{book.title}}</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Author : <b>{{book.author}}</b></li>
-      <li class="list-group-item">Country : <b>{{book.country}}</b></li>
-      <li class="list-group-item">Year : <b>{{book.year}}</b></li>
-      <li class="list-group-item">Number of pages : <b>{{book.pages}}</b></li>
-      <li class="list-group-item">Language : <b>{{book.language}}</b></li>
-
-
+      <li class="list-group-item">
+        <h6>Author: <b>{{book.author}}</b></h6>
+        <h6>Country : <b>{{book.country}}</b></h6>
+        <h6>Year : <b>{{book.year}}</b></h6>
+        <h6>Language : <b>{{book.language}}</b></h6>
+        <h6>Pages : <b>{{book.pages}}</b></h6>
+      </li>
     </ul>
-    <div class="card-body">
-      <a href="{{book.link}}" class="card-link">View on Wiki</a>
-    </div>
+      <a href="{{book.link}}" class="btn" style="border-radius:0px;background-color: #ffdb5b; color: #7952b3;">View on Wiki</a>
   </div>

@@ -16,10 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a style="color: white " class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          <a style="color: white " routerLink="/home" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a style="color: white " class="nav-link" href="#">Books</a>
+          <a style="color: white " routerLink="/books" class="nav-link" href="#">Books</a>
         </li>
         <li class="nav-item dropdown">
       </ul>
@@ -29,6 +29,6 @@
       </form>
     </div>
   </nav>
-  <app-books></app-books>
+  <router-outlet></router-outlet>
 </body>
 </html>

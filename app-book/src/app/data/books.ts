@@ -53,7 +53,7 @@ export const BOOKS : Book[] = [
     },
     {
       "author": "Hanan Al-Shaykh",
-      "country": "India/Iran/Iraq/Egypt/Tajikistan",
+      "country": "India/Iran",
       "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
       "language": "Arabic",
       "linkImg": "https://images-na.ssl-images-amazon.com/images/I/51kg-1A+3kL._SY344_BO1,204,203,200_.jpg",

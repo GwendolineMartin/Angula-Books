@@ -21,4 +21,6 @@ export class BooksComponent implements OnInit {
   onClick(book : Book):void {
     this.selectedBook = {...book}
   }
+
+
 }
